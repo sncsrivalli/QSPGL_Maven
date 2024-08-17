@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- BeforeSuite -->
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listenerPractice.ListenerImplementation"></listener>
+	</listeners>
+	<!-- BeforeTest -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<!-- BeforeClass -->
+			<class name="testng.SampleTest">
+				<methods>
+					<!-- BeforeMethod -->
+					<include name="demo"></include> <!-- Test -->
+					<!-- AfterMethod -->
+				</methods>
+			</class>
+			<!-- AfterClass -->
+		</classes>
+	</test>
+	<!-- AfterTest -->
+</suite><!-- AfterSuite -->
